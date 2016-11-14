@@ -1,0 +1,1 @@
+srun -c 10 python powercouples-thread.py -i chunk.gnu.0*
