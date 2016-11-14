@@ -1,0 +1,1 @@
+ sbatch --reservation=curso_jcm --partition=debug -c 20 ./run_cluster.sh 

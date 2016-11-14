@@ -1,0 +1,8 @@
+# run locally
+python powercouples-pp.py -i chunk.gnu.0*
+
+# run in nodes
+# important to set ncpus=0 for telling pp to use the discovered workers
+srun -c 10 ~/.local/bin/ppserver.py -w 10 -a -p 5000 -d -s "secret"
+python powercouples-pp.py -i chunk.gnu.0*
+
