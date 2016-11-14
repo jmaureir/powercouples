@@ -1,0 +1,12 @@
+#compile find
+cd pc
+make swig
+cd ..
+
+# compile pew
+cd pew
+make swig
+cd ..
+
+# run it
+srun -c 20 python powercouples.py -i data/input_10000x500.csv
